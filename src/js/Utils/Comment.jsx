@@ -3,5 +3,5 @@ import React from 'react';
 /* eslint-ensable no-unused-vars */
 
 export default props => (
-  <span className='code--comment'>// {props.children}</span>
+  <span className='code--comment'># {props.children}</span>
 );

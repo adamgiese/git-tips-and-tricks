@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import WebFont from 'webfontloader';
 import Subtitle from 'Utils/Subtitle.jsx';
 import TitleSlide from 'Content/Title/index.jsx';
+import AliasSlide from 'Content/Alias/index.jsx';
 /* eslint-ensable no-unused-vars */
 
 require('./scss/styles.scss');
@@ -26,6 +27,13 @@ class Slides extends React.Component {
   render() {
     const slideList = [
       <TitleSlide />,
+      <AliasSlide />,
+
+      /*
+       * - aliases
+       * - stashing
+       */
+
     ];
 
     const slides = slideList.map((value, index) => {
