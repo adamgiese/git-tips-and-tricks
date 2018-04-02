@@ -1,0 +1,37 @@
+.reveal {
+  .code {
+    margin-top: 3vmin;
+    font-size: .6rem;
+    line-height: 1.4;
+    text-align: left;
+
+    .fragment.fragment.fragment {
+      visibility: visible;
+      opacity: 1;
+
+      &.current-fragment {
+        color: #73fe75;
+      }
+    }
+  }
+
+  .code--content {
+    font-family: monospace;
+    background: black;
+    color: white;
+    padding: .5em 1em;
+    min-width: 50%;
+  }
+
+  .code--caption {
+    font-size: .5rem;
+    margin-top: .5em;
+    max-width: none;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+
+  .code--comment {
+    color: #cea6b9;
+  }
+}

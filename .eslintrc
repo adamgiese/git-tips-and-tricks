@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "extends": ["airbnb-base"],
+  "rules": {
+    "comma-dangle": ["error", {
+      "functions": "ignore",
+      "objects": "always-multiline",
+      "arrays": "always-multiline",
+    }],
+    "max-len": ["error", 150],
+    "linebreak-style": "off",
+    "no-nested-ternary": "off",
+    "arrow-body-style": "off",
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+  }
+}

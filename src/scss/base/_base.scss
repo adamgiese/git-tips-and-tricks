@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: calc(.5vh + 1vw + .25vmin);
+}
+
+body {
+  @include async-font($sans-serif, $sans-serif-fallback);
+  min-height: 100vh;
+  position: relative;
+}
+
+.reveal {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    @include async-font($display, $display-fallback);
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-bottom: .25em;
+    }
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  p {
+    max-width: 25em;
+    margin: 0 auto;
+
+    &:not(:first-child) {
+      margin-top: .5em;
+    }
+  }
+
+  .examples {
+    li {
+      list-style: none;
+    }
+  }
+}
