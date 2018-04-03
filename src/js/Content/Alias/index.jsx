@@ -106,12 +106,6 @@ const AliasSlide = () => (
     </section>
 
     <section>
-      <Code caption={'Aliases about aliases.'}>
-        $ git aliases <Comment>config --get-regexp alias</Comment><br />
-      </Code>
-    </section>
-
-    <section>
       <h3>Advanced Aliases</h3>
     </section>
 
