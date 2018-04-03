@@ -40,6 +40,16 @@ const AliasSlide = () => (
     </section>
 
     <section>
+      <Code caption={'General git niceties'}>
+        $ git create-branch <Comment>checkout -b</Comment><br />
+        $ git delete-branch <Comment>checkout -D</Comment><br />
+        $ git remotes <Comment>remote -v</Comment><br />
+        $ git stashes <Comment>stash list</Comment><br />
+        $ git branches <Comment>branch -a</Comment><br />
+      </Code>
+    </section>
+
+    <section>
       <Code caption={'Fix typos'}>
         $ git grpe <Comment>git grep</Comment> <br />
         $ git grp <Comment>git grep</Comment> <br />
