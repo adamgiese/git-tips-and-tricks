@@ -100,6 +100,29 @@ const AliasSlide = () => (
         $ git aliases <Comment>config --get-regexp alias</Comment><br />
       </Code>
     </section>
+
+    <section>
+      <h3>Advanced Aliases</h3>
+    </section>
+
+    <section>
+      <p>If you want more than a single line, you can add custom functions by adding a file named <code>git-COMMAND</code> to your $PATH</p>
+    </section>
+
+    <section>
+      <Code caption='git-curses'>
+        count_grep() &#123; git log --oneline --grep "$1" -i --no-merges | wc -l &#125;<br />
+        <br />
+        echo "# Instances of Curse Words in Commit Logs"<br />
+        echo "Fuck:   $(count_grep fuck)"<br />
+        echo "Shit:   $(count_grep shit)"<br />
+        echo "Hell:   $(count_grep ' hell ')"<br />
+        echo "Ass:    $(count_grep ' ass ')"<br />
+        echo "Damn:   $(count_grep damn)"<br />
+        echo "Dammit: $(count_grep dammit)"<br />
+      </Code>
+      <Code>$ git curses </Code>
+    </section>
   </Fragment>
 );
 
