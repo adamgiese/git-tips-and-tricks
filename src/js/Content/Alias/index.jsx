@@ -41,11 +41,18 @@ const AliasSlide = () => (
 
     <section>
       <Code caption={'General git niceties'}>
-        $ git create-branch <Comment>checkout -b</Comment><br />
-        $ git delete-branch <Comment>checkout -D</Comment><br />
         $ git remotes <Comment>remote -v</Comment><br />
         $ git stashes <Comment>stash list</Comment><br />
         $ git branches <Comment>branch -a</Comment><br />
+      </Code>
+    </section>
+
+    <section>
+      <Code caption={'Branching'}>
+        $ git create-branch <Comment>checkout -b</Comment><br />
+        $ git delete-branch <Comment>checkout -D</Comment><br />
+        $ git this-branch <Comment>rev-parse --abbrev-ref HEAD</Comment>
+        $ git push-branch <Comment>!git push -u origin `git this-branch`</Comment>
       </Code>
     </section>
 
